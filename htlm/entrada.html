@@ -10,51 +10,59 @@
 </head>
 
 <body>
-    <div id="cabecera">SIT SISTEMA DE INVENTARIO TEXTIL</div>
-    <header>
-        <nav>
-            <ul class="Menu">
-                <li>
-                    <a href="">Entrada y Salida de Mercancia</a>
-                </li>
-                <li>
-                    <a href="">Informes</a>
-                </li>
-                <li>
-                    <a href="">Caractertisticas de Productos</a>
-                </li>
-                <li>
-                    <a href="">Codificacion</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="botones">
-            <div>
-                <button>ENTRADA</button>
-            </div>
-            <div>
-                <button>SALIDA</button>
-            </div>
-        </section>
+    <main class="contenedor">
+        <header>
+            <div id="cabecera">SIT SISTEMA DE INVENTARIO TEXTIL</div>
+            <nav>
+                <ul class="Menu">
+                    <li>
+                        <a class="ej" href="">Entrada y Salida de Mercancia</a>
+                    </li>
+                    <li>
+                        <a href="">Informes</a>
+                    </li>
+                    <li>
+                        <a href="">Caractertisticas de Productos</a>
+                    </li>
+                    <li>
+                        <a href="">Codificacion</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <section class="plantilla">
             <form action="" class="formulario">
-              <div class="fecha"><input class="fecha" type="date" placeholder="Fecha "></div>
-              
-              <input type="text" placeholder="Proovedor">
-              <input type="text" placeholder="Cantidad">
-              <input type="text" placeholder="Precio">
-           <label for="seleccionProductos">Selecione Producto: </label>
-           <select name="seleccionProductos" id="seleccionProductos">
-            <optio>NAN</optio>
-            <optio>NAN</optio>
-            <optio>NAN</optio>
-            <optio>NAN</optio>
-           </select>
+
+                 <div class="campo"><label> FECHA : </label> <input class="FECHA" type="date" placeholder="FECHA"></div>
+                 <div class="campo"><label> PROVEEDOR : </label> <input class="PROVEEDOR" type="text" placeholder="proveedor"></div>
+                 <div class="campo"><label> CANTIDAD : </label> <input class="CANTIDAD" type="number" placeholder="cantidad"></div>
+                 <div class="campo"><label> PRECIO : </label> <input class="PRECIO" type="number" placeholder="PRECIO"></div>
+                 <label> SELECCIONE UN PRODUCTO : </label> <select>SELECCIONE UN PRODUCTO....</select>
             </form>
+            <table border="1">
+
+                <tr>
+                    <th>CODIGO</th>
+                    <th>NOMBRE</th>
+                    <th>CANTIDAD</th>
+                    <th>VALOR U </th>
+                    <th>PRECIO V</th>
+                    <th>PROVEEDOR</th>
+                    <th>ACCION</th>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+                </table>
         </section>
+        
     </main>
+
 </body>
 
 </html>
