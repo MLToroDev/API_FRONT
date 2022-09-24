@@ -41,40 +41,52 @@
         <section class="plantilla">
             <form action="" class="formulario">
 
-                 <div class="campo"><label> FECHA:</label> <input class="FECHA" type="date" placeholder="FECHA"></div>
-                 <div class="campo"><label> PROVEEDOR:</label> <input class="PROVEEDOR" type="text" placeholder="proveedor"></div>
-                 <div class="campo"><label> CANTIDAD:</label> <input class="CANTIDAD" type="number" placeholder="cantidad"></div>
-                 <div class="campo"><label> PRECIO:</label> <input class="PRECIO" type="number" placeholder="PRECIO"></div>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> SELECCIONE UN PRODUCTO:</label> <select>SELECCIONE UN PRODUCTO....</select>
-                
-                </form>
-                <section class="registrar">
-                    <div>
-                        <button>REGISTRAR</button>
-                    </div>
-                </section>
-            <table border="1">
+                <div class="campo"><label> FECHA:</label> <input class="FECHA" type="date" placeholder="FECHA"></div>
+                <div class="campo"><label> PROVEEDOR:</label> <input class="PROVEEDOR" type="text"
+                        placeholder="proveedor"></div>
+                <div class="campo"><label> CANTIDAD:</label> <input class="CANTIDAD" type="number"
+                        placeholder="cantidad"></div>
+                <div class="campo"><label> PRECIO:</label> <input class="PRECIO" type="number" placeholder="PRECIO">
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> SELECCIONE UN PRODUCTO:</label>
+                <select>SELECCIONE UN PRODUCTO....</select>
 
-                <tr>
-                    <th>CODIGO</th>
-                    <th>NOMBRE</th>
-                    <th>CANTIDAD</th>
-                    <th>VALOR U </th>
-                    <th>PRECIO V</th>
-                    <th>PROVEEDOR</th>
-                    <th>ACCION</th>
-                </tr>
-                <tr>
-                    <td>Celda 1</td>
-                    <td>Celda 2</td>
-                    <td>Celda 1</td>
-                    <td>Celda 2</td>
-                    <td>Celda 1</td>
-                    <td>Celda 2</td>
-                </tr>
-                </table>
+            </form>
+            <section class="registrar">
+                <div>
+                    <button>REGISTRAR</button>
+                </div>
+            </section>
+            <table class="table" cellspacing="0" rules="all" border="1" id="MainContent_dgDetalle"
+            <tbody>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Valor U</th>
+                        <th scope="col">Precio V</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col">Accion</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Licra</td>
+                        <td>200</td>
+                        <td>1500$</td>
+                        <td>3500$</td>
+                        <td>Licras AM</td>
+                        <td>
+                            <input type="submit" name="retirar"
+                                value="Retirar item" id="retirar" title="935"
+                                class="btn btn-danger">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         </section>
-        
+
     </main>
 
 </body>
