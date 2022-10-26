@@ -1,5 +1,6 @@
 $(document).ready(() => {
-    
+   
+
     $.get("http://localhost:3000/api/producto", (rs) => {
         console.log(rs);
         let t = $("table");
