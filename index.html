@@ -24,11 +24,12 @@
     <script defer src="Script/etiquetas.personalizadas.js"></script>
 
     <script defer src="Script/script.js"></script>
-  
+
 </head>
 
 <body>
     <div class="container body mt-5 mb-5">
+
         <menu-var></menu-var>
 
         <hr>
@@ -37,62 +38,68 @@
                 <button type="submit" class="btn btn-secondary p-3">ENTRADA</button>
             </div>
             <div class="col-6 text-center">
-                <button type="submit" class="btn btn-primary registrar p-3">SALIDA</button>
+                <button type="submit" class="btn btn-secondary registrar p-3">SALIDA</button>
             </div>
         </div>
-        <div class="container1 p-5">
-            <form class="row g-3 form ">
-                
+
+        <div class="container p-5">
+
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-4">
                         <label for="Fecha" class="form-label">CODIGO:</label>
-                        <input type="text" class="form-control" id="INP_Codigo">
+                        <input type="text" class="form-control" id="codigo" name="codigo">
                     </div>
                     <div class="col-4">
                         <label for="precio" class="form-label">Nombre producto</label>
-                        <input type="text" class="form-control" id="precio"
+                        <input type="text" class="form-control" id="producto" name="producto"
                             placeholder="Escriba el nombre del producto">
                     </div>
                     <div class="col-4">
                         <label for="cantidad" class="form-label">CANTIDAD:</label>
-                        <input type="number" class="form-control" id="cantidad">
+                        <input type="number" class="form-control" id="cantidad" name="cantidad">
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-4">
                         <label for="provedor" class="form-label">Proovedor:</label>
-                        <input type="text" class="form-control" id="provedor">
+                        <input type="text" class="form-control" id="proovedor" name="proovedor">
                     </div>
 
                     <div class="col-4">
                         <label for="precio" class="form-label">Precio Venta:</label>
-                        <input type="number" class="form-control" id="precio">
+                        <input type="number" class="form-control" id="valorU" name="valorV">
                     </div>
                     <div class="col-4">
                         <label for="precio" class="form-label">Precio Unidad:</label>
-                        <input type="number" class="form-control" id="precio">
+                        <input type="number" class="form-control" id="precioV" name="precioU">
                     </div>
                 </div>
+            </div>
 
+            <div class="row mt-2">
                 <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-success registrar">REGISTRAR</button>
+                    <button class="btn btn-success" id="BtnRegistrar">REGISTRAR</button>
                 </div>
-                <table class="table mt-4 mb-5 table table-hover ">
-                    <thead>
-                        <tr>
-                            <th scope="col">CODIGO</th>
-                            <th scope="col">NOMBRE PRODUCTO</th>
-                            <th scope="col">CANTIDAD</th>
-                            <th scope="col">VALOR U</th>
-                            <th scope="col">PRECIO V</th>
-                            <th scope="col">PROVEDOR</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </form>
+            </div>
+            <div class="container overflow-abajo">
+                
+                    <table class="table mt-4 table-hover table-bordered table-warning ">
+                        <thead>
+                            <tr>
+                                <th scope="col">CODIGO</th>
+                                <th scope="col">NOMBRE PRODUCTO</th>
+                                <th scope="col">CANTIDAD</th>
+                                <th scope="col">VALOR U</th>
+                                <th scope="col">PRECIO V</th>
+                                <th scope="col">PROVEDOR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                
+            </div>
         </div>
     </div>
 </body>
