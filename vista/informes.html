@@ -17,41 +17,45 @@
         crossorigin="anonymous"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-
+    <script defer src="../Script/informer.js"></script>
     <script defer src="../Script/etiquetas.personalizadas.js"></script>
 </head>
 
 <body>
     <div class="container body mt-5 mb-5">
-        <menu-var></menu-var>
+        <div class="container">
+            <menu-var></menu-var>
+        </div>
         <hr>
-        <form class="row g-3 form ">
-            <div id="id" class="col-md-2">
-                <label for="id" class="form-label">ID:</label>
-                <input type="text" class="form-control" id="id">
+        <div class="container">
+            <div class="row">
+                <div id="id" class="col-md-2">
+                    <label for="id" class="form-label">ID:</label>
+                    <input type="text" class="form-control" id="id">
+                </div>
+                <div id="buscar" class="col-12 text-center">
+                    <button class="btn btn-success" id="btnBuscar">BUSCAR</button>
+                </d..
+                iv>
             </div>
-            <div id="nombre" class="col-md-2">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre">
-            </div>
-            <div id="buscar" class="col-12 text-center">
-                <button type="submit" class="btn btn-success Buscar">BUSCAR</button>
-            </div>
-            <div class="container1 p-6">
-                <table class="table mt-5 mb-6 table ">
-                    <thead>
-                        <tr>
-                            <th scope="col">CODIGO</th>
-                            <th scope="col">DESCRIPCION</th>
-                            <th scope="col">CANTIDAD</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </form>
+
+        </div>
+
+        <div class="container1 p-6">
+            <table class="table mt-4 table-hover table-bordered table-warning ">
+                <thead>
+                    <tr>
+                        <th scope="col">CODIGO</th>
+                        <th scope="col">DESCRIPCION</th>
+                        <th scope="col">CANTIDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
         <div id="imprimir" class="col-12 text-center">
             <button type="submit" class="btn btn-success Imprimir">IMPRIMIR</button>
         </div>
