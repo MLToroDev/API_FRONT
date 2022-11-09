@@ -19,45 +19,45 @@
 
     <script defer src="../Script/informer.js"></script>
     <script defer src="../Script/etiquetas.personalizadas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="/img/logo.jpg">
+
 </head>
 
 <body>
-    <div class="container body mt-5 mb-5">
+    <div class="container body mt-5 mb-5 p-5">
         <div class="container">
             <menu-var></menu-var>
         </div>
         <hr>
         <div class="container">
             <div class="row">
-                <div id="id" class="col-md-2">
-                    <label for="id" class="form-label">ID:</label>
-                    <input type="text" class="form-control" id="id">
+                <div id="id" class="col-4">
+                    <input type="text" class="form-control" id="Codigo" placeholder="Ingrese la id del producto a buscar">
                 </div>
-                <div id="buscar" class="col-12 text-center">
+                <div id="buscar" class="col-3 text-center">
                     <button class="btn btn-success" id="btnBuscar">BUSCAR</button>
-                </d..
-                iv>
+                </div>
+
             </div>
 
-        </div>
+            <div class="container p-6 overflow-auto">
+                <table class="table mt-4 table-hover table-bordered table-warning">
+                    <thead>
+                        <tr>
+                            <th scope="col">CODIGO</th>
+                            <th scope="col">NOMBRE PRODUCTO</th>
+                            <th scope="col">CANTIDAD</th>
+                            <th scope="col">VALOR U</th>
+                            <th scope="col">PRECIO V</th>
+                            <th scope="col">PROVEDOR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-        <div class="container1 p-6">
-            <table class="table mt-4 table-hover table-bordered table-warning ">
-                <thead>
-                    <tr>
-                        <th scope="col">CODIGO</th>
-                        <th scope="col">DESCRIPCION</th>
-                        <th scope="col">CANTIDAD</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-
-        <div id="imprimir" class="col-12 text-center">
-            <button type="submit" class="btn btn-success Imprimir">IMPRIMIR</button>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salida</title>
+    <link rel="stylesheet" href="../Style/stilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="../Script/etiquetas.personalizadas.js"></script>
+    <script defer src="../Script/salida.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="/img/logo.jpg">
+
+</head>
+
+<body>
+    <div class="container body mt-5 mb-5 p-5">
+        <div class="row">
+            <menu-var></menu-var>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6 text-center">
+                <button id="BtnEntrada" type="submit" class="btn btn-secondary p-3">ENTRADA</button>
+            </div>
+            <div class="col-6 text-center">
+                <button id="BtnSalida" type="submit" class="btn btn-secondary  p-3">SALIDA</button>
+            </div>
+        </div>
+        <div class="container1 p-5">
+            <div class="row g-3 form ">
+                <div class="col-md-6">
+                    <input placeholder="FECHA" type="date" class="form-control" id="fecha">
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="CLIENTE" type="text" class="form-control" id="cliente">
+                </div>
+                <div class="col-4">
+                 
+                    <input placeholder="CANTIDAD" type="number" class="form-control" id="cantidad">
+                </div>
+                <div class="col-4">
+                  
+                    <input placeholder="PRECIO" type="number" class="form-control" id="precioV">
+                </div>
+                <div class="col-4">
+                 
+                    <select id="inputState" class="form-select mt-2">
+                        <option selected>seleccione un producto</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 text-center">
+                    <button class="btn btn-success" id="BtnRegistrar">REGISTRAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="container overflow-auto">
+            <table class="table mt-4 table-hover table-bordered table-warning ">
+                <thead>
+                    <tr>
+                       
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">CANTIDAD</th>
+                        <th scope="col">PRECIO V</th>
+                        <th scope="col">CLIENTE</th>
+                        <th scope="col">FECHA</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LICRA</td>
+                        <td>200</td>
+                        <td>1500$</td>
+                        <td>LICRAS LM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

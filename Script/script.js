@@ -3,33 +3,40 @@
 $(document).ready(() => {
 cargarTabla();
 
+
+
    
 
 });
+$('#BtnSalida').click(()=>{
+  document.location = "salida.html"
+})
+
+
+
 function cargarTabla(){
-    let t = $("tbody");
-    t.empty();
+  let t = $("tbody");
+  t.empty();
+  
+  $.get("http://localhost:3000/api/producto", (rs) => {
     
-    $.get("http://localhost:3000/api/producto", (rs) => {
-        console.log(rs);
-       
-        rs.forEach(Producto => {
-            t.append(`<tr>
-            <td>${Producto.Codigo}</td>
-            <td>${Producto.Nombre}</td>
-            <td>${Producto.Cantidad}</td>
-            <td>${Producto.ValorU}</td>
-            <td>${Producto.PrecioV}</td>
-            <td>${Producto.Cliente}</td>
-            </tr>`);
-        });
-    })
+     
+      rs.forEach(Producto => {
+          t.append(`<tr>
+          <td>${Producto.Codigo}</td>
+          <td>${Producto.Nombre}</td>
+          <td>${Producto.Cantidad}</td>
+          <td>${Producto.ValorU}</td>
+          <td>${Producto.PrecioV}</td>
+          <td>${Producto.Cliente}</td>
+          </tr>`);
+      });
+  })
 }
 
 
 
 $('#BtnRegistrar').click(() => {
-console.log("el kkks");
      const Codigo = $('#codigo');
      const Nombre = $('#producto')
      const Cantidad = $('#cantidad');
@@ -40,16 +47,26 @@ console.log("el kkks");
     let p = {
         Codigo: Codigo.val(), Nombre: Nombre.val(), Cantidad: Cantidad.val(), ValorU: ValorU.val(),
          PrecioV: PrecioV.val(), Cliente: cliente.val()
-     };
-     console.log(p);
-
+     }
      $.post("http://localhost:3000/api/producto", p, (rs) => {
-         console.log(rs);
-         alert("registro success");
+         
+            Swal.fire({
+              icon: 'success',
+              title: 'Listo',
+              text: 'El registro del producto fue exitoso',
+              confirmButtonColor: '#198754',
+              iconColor: '#198754'
+            })
             cargarTabla();
-   })
-
-
+   }).fail(() => {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Registro incorrecto, verifique haber ingresado todos los datos',
+      confirmButtonColor: '#198754',
+      iconColor: '#198754'
+    })
+  })
 });
 
 
