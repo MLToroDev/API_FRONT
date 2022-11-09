@@ -3,7 +3,7 @@ $(document).ready(() => {
 });
 
 $('#btnBuscar').click(() => {
-
+  
   let t = $("tbody");
   t.empty();
   const Codigo = $('#Codigo');
