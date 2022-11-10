@@ -16,7 +16,7 @@ function cargarproductos() {
     })
 }
 $('#BtnEntrada').click(() => {
-    document.location = "index.html"
+    document.location = "entrada.html"
 })
 
 function cargarTabla(){

@@ -11,8 +11,8 @@ $('#btnBuscar').click(() => {
 
 
   $.get("http://localhost:3000/api/producto/buscar/" + p, (rs) => {
-    
-    if (rs != undefined) {
+    console.log(rs)
+    if (rs.length > 0) {
       rs.forEach(Producto => {
         t.append(`<tr>
           <td>${Producto.Codigo}</td>
@@ -31,10 +31,7 @@ $('#btnBuscar').click(() => {
         confirmButtonColor: '#198754',
         iconColor: '#198754'
       })
-
     }
-
-
   }).fail(() => {
     Swal.fire({
       icon: 'error',

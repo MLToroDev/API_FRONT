@@ -7,9 +7,10 @@ $("#BtnIngresar").click(() => {
 $.get("http://localhost:3000/api/producto/login", (rs) => {
 
         rs.forEach(Usuari => {
-            usa = Usuari.usuario;
-            contra = Usuari.contraseña;
+            usa = Usuari.Usuarios;
+            contra = Usuari.Contraseña;
         });
+        
         if (usa == usuario.val() && contra == contraseña.val()) {
             Swal.fire({
                 icon: 'success',
@@ -18,7 +19,7 @@ $.get("http://localhost:3000/api/producto/login", (rs) => {
                 confirmButtonColor: '#198754',
                 iconColor: '#198754'
             })
-            function accedio(){document.location = "/vista/index.html"}
+            function accedio(){document.location = "/vista/entrada.html"}
             setTimeout(accedio, 2000)
         }
         else {
